@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,800&display=swap');
+// COLOR VARIABLES
+$color-dark-2: #2c2c2c;
+$color-dark-1: #1b1b1b;
+$color-black: #000;
+$color-white: #fff;
+$color-light: #cdcdcd;
+$color-background: #006f93;
+$color-green: green;
+$btn-color-orange: #e84700;
+$btn-color-orange-light: #f2723a;
+$color-light-bg: #f4f4f4;
+
+// Fonts
+$font-primary: 'Open Sans', sans-serif;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: $font-primary;
+}
+
+/*
+h3 {
+  font-size: 1em;
+}
+
+p {
+  font-size: 0.8em;
+  line-height: 1.6em;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.subtitle {
+  color: $color-background;
+  font-weight: bold;
+  padding: 0.5em 0 1em;
+}
+
+.container {
+  padding: 0.7em 0.6em;
+}
+
+.container__button-orange {
+  background: $btn-color-orange;
+  width: 100%;
+  display: block;
+  border: none;
+  border-radius: 5px;
+  color: $color-white;
+  padding: 0.8em;
+  text-decoration: none;
+  font-size: 0.9em;
+  margin: 5% auto 5%;
+
+  &:hover {
+    background-color: $btn-color-orange-light;
+    cursor: pointer;
+  }
+
+  & a {
+    color: $color-white;
+    text-decoration: none;
+  }
+}
+
+.feature__btn {
+  background: $color-dark-2;
+  width: 100%;
+  display: block;
+  border: none;
+  border-radius: 5px;
+  padding: 0.8em;
+  text-decoration: none;
+  font-size: 0.9em;
+  margin: 5% auto 5%;
+  &:hover {
+    background-color: $color-light;
+    cursor: pointer;
+  }
+}
+
+
+@media (min-width: 475px) {
+  .container__button-orange {
+    width: 80%;
+    font-size: 1em;
+  }
+  .feature__btn {
+    width: 80%;
+    font-size: 1em;
+  }
+}
+
+@media (min-width: 550px) {
+  .container__button-orange {
+    width: 100%;
+    font-size: 0.9em;
+  }
+  .sidebar-btn {
+    width: 80%;
+  }
+
+  .feature__btn {
+    width: 60%;
+    font-size: 0.9em;
+  }
+}
+
+@media (min-width: 1018px) {
+  h3 {
+    font-size: 1.2em;
+  }
+
+  p {
+    font-size: 0.9em;
+    line-height: 1.6em;
+  }
+
+  .container__button-orange {
+    width: 40%;
+    font-size: 0.9em;
+    margin: 5% 0;
+  }
+
+  .feature__btn {
+    width: 30%;
+    font-size: 0.9em;
+    margin: 5% 0;
+  }
+}
+
+@media (min-width: 1250px) {
+  h3 {
+    font-size: 1.2em;
+  }
+
+  p {
+    font-size: 0.9em;
+    line-height: 1.6em;
+  }
+  .container {
+    padding: 0.8em 5em;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+    padding: 0.8em 8em;
+  }
+}
+
+@media (min-width: 1663px) {
+  h3 {
+    font-size: 1.3em;
+  }
+
+  p {
+    font-size: 0.9em;
+    line-height: 1.6em;
+  }
+  .container {
+    padding: 0.8em 15em;
+  }
+}
+
+
+*/
