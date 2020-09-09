@@ -1,0 +1,19 @@
+.features-container {
+  background-color: #f7f7f7;
+
+  & h3 {
+    margin-bottom: 2em;
+  }
+}
+
+.features-content {
+  background: url('https://www.sipgate.de/wp-content/uploads/sim2_refresh.jpg');
+  background-position: top center;
+  display: flex;
+  flex-direction: column;
+  height: 700px;
+  justify-content: flex-end;
+  margin: 0 1em;
+  border-radius: 10px;
+  color: $color-white;
+}

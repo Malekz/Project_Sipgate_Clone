@@ -1,12 +1,13 @@
 import React from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
 
 // import styling
 import './sass/main.scss';
 
 // import components
 import Navbar from './components/navbar';
-import Header from './components/header';
-import Features from './components/features';
+import Hero from './components/hero.js';
+import Products from './components/products';
 import NewFeatures from './components/newFeatures';
 import About from './components/about';
 import Footer from './components/footer';
@@ -14,12 +15,14 @@ import Footer from './components/footer';
 function App() {
   return (
     <div className="App">
-      <Navbar />
-      <Header />
-      <Features />
-      <NewFeatures />
-      <About />
-      <Footer />
+      <Router>
+        <Navbar />
+        <Hero />
+        <Products />
+        <NewFeatures />
+        <About />
+        <Footer />
+      </Router>
     </div>
   );
 }

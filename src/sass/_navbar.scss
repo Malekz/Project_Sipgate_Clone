@@ -3,31 +3,25 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 0 1em;
+  height: 80px;
+  background: $color-dark;
 }
 
 .navbar {
-  background: $color-background;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 0.9rem;
   border-radius: 10px;
 }
-/*
 .navbar-logo {
-  color: #fff;
-  justify-self: start;
+  color: $color-white;
   margin-left: 20px;
   cursor: pointer;
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 1.2rem;
+  z-index: 5;
 }
-*/
-.fa-firstdraft {
-  margin-left: 0.5rem;
-  font-size: 1.6rem;
-}
-
 .nav-menu {
   display: grid;
   grid-template-columns: repeat(5, auto);
@@ -46,7 +40,7 @@ header {
 }
 
 .nav-links {
-  color: white;
+  color: $color-white;
   text-decoration: none;
   padding: 0.5rem 1rem;
 }
@@ -67,6 +61,7 @@ header {
 
 .menu-icon {
   display: none;
+  z-index: 5;
 }
 
 @media screen and (max-width: 960px) {
@@ -78,20 +73,21 @@ header {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     position: absolute;
     top: 80px;
-    left: -100%;
+    top: -100%;
+    left: 0;
     opacity: 1;
-    transition: all 0.5s ease;
+    transition: all 0.5s ease-out;
   }
 
   .nav-menu.active {
-    background: #242222;
-    left: 0;
+    background: $color-dark;
+    top: 0;
     opacity: 1;
     transition: all 0.5s ease;
-    z-index: 1;
+    z-index: 2;
   }
 
   .nav-links {
@@ -105,7 +101,6 @@ header {
     background-color: #1888ff;
     border-radius: 0;
   }
-  /*
 
   .navbar-logo {
     position: absolute;
@@ -113,7 +108,6 @@ header {
     left: 0;
     transform: translate(25%, 50%);
   }
-*/
   .menu-icon {
     display: block;
     position: absolute;
