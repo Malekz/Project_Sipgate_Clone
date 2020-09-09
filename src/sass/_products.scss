@@ -1,0 +1,103 @@
+.products-containeer {
+  padding: 2em 0.8em;
+  background-color: #f7f7f7;
+
+  h3 {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+  }
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 0.5em;
+
+  .card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 6.5px;
+    background: linear-gradient(-36deg, #000 0%, #202020 80%);
+    border: 1px $color-dark solid;
+    &__image-holder {
+      width: 35%;
+    }
+
+    &-title {
+      color: $color-white;
+      font-size: 0.6em;
+    }
+
+    &-link {
+      width: 100%;
+      border: none;
+      font-size: 1rem;
+      font-weight: bold;
+      color: $color-dark;
+      padding: 1rem;
+      background-color: $color-white;
+    }
+  }
+}
+
+/*
+.features {
+  background-color: $color-background;
+  color: $color-white;
+}
+
+.feature {
+  margin-bottom: 3em;
+
+  &__title {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: center;
+    border-bottom: 1px solid $color-white;
+
+    &-arrow {
+      width: 50px;
+      height: 50px;
+      padding: 0.5em;
+    }
+    & h3 {
+      padding: 1em;
+      border-left: 1px solid $color-white;
+    }
+  }
+
+  &__title,
+  p {
+    padding: 0 0.5em;
+    margin-top: 3%;
+  }
+
+  & a {
+    text-decoration: none;
+    color: $color-white;
+  }
+}
+
+@media (min-width: 650px) {
+  .features {
+    display: flex;
+    justify-content: space-between;
+  }
+  .feature {
+    &__title {
+      width: 90%;
+    }
+  }
+}
+
+@media (min-width: 1663px) {
+  .feature {
+    margin: 2em 0;
+  }
+}
+
+*/
