@@ -14,11 +14,11 @@ const Header = () => {
         muted
       ></video>
       <div className="hero-content">
-        <h1>Die eSim von sipgate</h1>
+        <h1>Die eSIM von sipgate</h1>
         <p>
           <strong>Entdecken Sie die echten Vorteile der eSIM</strong>
         </p>
-        <a className="btn" href="#">
+        <a className="btn btn-primary" href="#">
           Mehr erfahren
         </a>
       </div>
