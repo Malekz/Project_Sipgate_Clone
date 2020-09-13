@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,;1,400&display=swap');
 $color-dark: #000;
 $color-dark-light: #807f7f;
+$color-dark-2: #1a1919;
 $color-white: #fff;
 
 /* Fonts */
@@ -28,9 +29,17 @@ $font-primary: /*'Open Sans', sans-serif*/ 'Open Sans', sans-serif;
 body {
   box-sizing: border-box;
   font-family: $font-primary;
-  text-align: center;
   font-size: 16px;
   font-weight: 300;
+}
+
+p,
+ul,
+ol,
+strong,
+em,
+small {
+  margin-bottom: 2em;
 }
 
 h1,
@@ -41,15 +50,29 @@ p {
   line-height: 1.5em;
   letter-spacing: 0.03em;
   font-weight: normal;
+  margin-bottom: 1em;
 }
 
 h1 {
   font-size: 2em;
 }
 
-p {
-  font-size: 1em;
+h3 {
+  font-size: 1.5em;
   font-weight: 100;
+}
+
+p {
+  font-size: 1.1em;
+  font-weight: 100;
+}
+
+em {
+  font-weight: bold;
+}
+
+.font-dark {
+  color: $color-dark;
 }
 
 .container {
@@ -57,18 +80,57 @@ p {
 }
 
 .btn {
+  position: relative;
   display: inline-block;
-  margin: 2em auto 5%;
+  margin: 0.5em auto;
   padding: 0.7em 1.3em;
-  background-color: #fff;
-  //border-color: #fff;
-  color: #334;
   border-radius: 50px;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 0.9em;
+  text-shadow: none;
+  font-size: 0.8em;
   font-weight: bold;
+  overflow: hidden;
   cursor: pointer;
+  //box-shadow: #d1d1d1 -10px 8px 0;
+}
+.btn:hover {
+  box-shadow: #d1d1d1 -10px 8px 0;
+  transition: box-shadow 0.3s, transform 0.3s, -webkit-transform 0.3s;
+}
+
+.btn-primary {
+  position: relative;
+  background-color: #fff;
+  color: #334;
+  border: 0.2em solid $color-white;
+}
+
+.btn-secondary {
+  color: $color-white;
+  background-color: transparent;
+  box-sizing: border-box;
+  border: 0.2em solid $color-white;
+  z-index: 2;
+}
+
+.btn-black {
+  position: relative;
+  background-color: $color-dark;
+  color: $color-white;
+  border: 0.2em solid $color-dark;
+}
+
+@media (min-width: 476px) {
+  .btn {
+    margin: 0 0.5em;
+  }
+}
+
+@media (min-width: ) {
+}
+
+@media (min-width: ) {
 }
 /*
 h3 {
