@@ -5,19 +5,9 @@ import heroVideo from '../assets/keyvisual_sipgate_1280x1280_black.mp4';
 const Header = () => {
   return (
     <div className="container hero">
-      <video
-        loop="loop"
-        autoPlay="autoplay"
-        playsInline
-        className="hero-video"
-        src={heroVideo}
-        muted
-      ></video>
       <div className="hero-content">
         <h1>Die eSIM von sipgate</h1>
-        <p>
-          <strong>Entdecken Sie die echten Vorteile der eSIM</strong>
-        </p>
+        <p>Entdecken Sie die echten Vorteile der eSIM</p>
         <a className="btn btn-primary" href="#">
           Mehr erfahren
         </a>

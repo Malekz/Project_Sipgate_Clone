@@ -1,5 +1,5 @@
 import React from 'react';
-import { AiOutlineArrowRight } from 'react-icons/ai';
+//import { AiOutlineArrowRight } from 'react-icons/ai';
 
 import firstImage from '../assets/stage-product-icons-basic.svg';
 import secondImage from '../assets/stage-product-icons-simquadrat.svg';
@@ -23,11 +23,9 @@ const Products = () => {
                 Der Kostenlose <br /> Telefonanschluss
               </h3>
             </div>
-            <button className="card-link">sipgate basic </button>
           </figcaption>
           <a href="#" className="card-link">
             sipgate basic
-            <AiOutlineArrowRight />
           </a>
         </figure>
 
@@ -41,11 +39,9 @@ const Products = () => {
                 Der Kostenlose <br /> Telefonanschluss
               </h3>
             </div>
-            <button className="card-link">sipgate basic </button>
           </figcaption>
           <a href="#" className="card-link">
             sipgate basic
-            <AiOutlineArrowRight />
           </a>
         </figure>
 
@@ -59,11 +55,9 @@ const Products = () => {
                 Der Kostenlose <br /> Telefonanschluss
               </h3>
             </div>
-            <button className="card-link">sipgate basic </button>
           </figcaption>
           <a href="#" className="card-link">
             sipgate basic
-            <AiOutlineArrowRight />
           </a>
         </figure>
 
@@ -77,11 +71,9 @@ const Products = () => {
                 Der Kostenlose <br /> Telefonanschluss
               </h3>
             </div>
-            <button className="card-link">sipgate basic </button>
           </figcaption>
           <a href="#" className="card-link">
             sipgate basic
-            <AiOutlineArrowRight />
           </a>
         </figure>
 
@@ -95,11 +87,9 @@ const Products = () => {
                 Der Kostenlose <br /> Telefonanschluss
               </h3>
             </div>
-            <button className="card-link">sipgate basic </button>
           </figcaption>
           <a href="#" className="card-link">
             sipgate basic
-            <AiOutlineArrowRight />
           </a>
         </figure>
 
@@ -116,7 +106,6 @@ const Products = () => {
           </figcaption>
           <a href="#" className="card-link">
             sipgate basic
-            <AiOutlineArrowRight />
           </a>
         </figure>
       </div>

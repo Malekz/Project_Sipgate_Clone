@@ -1,0 +1,42 @@
+.about-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 4em;
+  padding: 3em 2em;
+}
+
+article p {
+  margin-bottom: 1.5em;
+}
+
+@media (min-width: 910px) {
+  .about-container {
+    flex-direction: row;
+    //padding: 3em 2em;
+
+    & article {
+      width: 100%;
+    }
+  }
+  .about-listing {
+    padding-left: 10em;
+  }
+}
+
+@media (min-width: 1040px) {
+  .about-container {
+    padding: 3em 4em;
+  }
+}
+
+@media (min-width: 1300px) {
+  .about-container {
+    padding: 3em 10em;
+  }
+}
+
+@media (min-width: 1600px) {
+  .about-container {
+    padding: 3em 20em;
+  }
+}

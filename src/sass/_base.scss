@@ -1,6 +1,7 @@
 //@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,;1,400&display=swap');
 $color-dark: #000;
+$color-dark-1: #ccc;
 $color-dark-light: #807f7f;
 $color-dark-2: #1a1919;
 $color-white: #fff;
@@ -47,9 +48,8 @@ h2,
 h3,
 h4,
 p {
-  line-height: 1.5em;
+  line-height: 1.3em;
   letter-spacing: 0.03em;
-  font-weight: normal;
   margin-bottom: 1em;
 }
 
@@ -57,11 +57,18 @@ h1 {
   font-size: 2em;
 }
 
-h3 {
-  font-size: 1.5em;
-  font-weight: 100;
+h2 {
+  font-size: 1.7em;
 }
 
+h3 {
+  font-size: 1.3em;
+}
+
+h6 {
+  font-size: 1em;
+  margin-bottom: 1em;
+}
 p {
   font-size: 1.1em;
   font-weight: 100;
@@ -127,11 +134,37 @@ em {
   }
 }
 
-@media (min-width: ) {
+@media (min-width: 520px) {
+  h2 {
+    font-weight: 100;
+  }
+  em {
+    font-weight: bold;
+  }
 }
 
-@media (min-width: ) {
+@media (min-width: 780px) {
+  h3 {
+    font-weight: 100;
+  }
 }
+
+@media (min-width: 1040px) {
+  h2 {
+    font-size: 1.9em;
+  }
+}
+
+@media (min-width: 1300px) {
+  h2 {
+    font-size: 2.5em;
+  }
+  h3 {
+    font-size: 1.8em;
+    font-weight: 100;
+  }
+}
+
 /*
 h3 {
   font-size: 1em;

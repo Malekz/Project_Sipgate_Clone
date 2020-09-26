@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { menuItems } from './menuItems';
+import { menuItems } from './data';
 import { Link } from 'react-router-dom';
 
 const DropDown = () => {

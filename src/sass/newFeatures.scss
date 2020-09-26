@@ -1,19 +1,90 @@
 .features-container {
   background-color: #f7f7f7;
+  padding: 2em 1em;
+  padding-bottom: 5em;
+  text-align: center;
 
   & h3 {
-    margin-bottom: 2em;
+    margin-bottom: 0.5em;
   }
 }
 
-.features-content {
-  background: url('https://www.sipgate.de/wp-content/uploads/sim2_refresh.jpg');
-  background-position: top center;
+.features-grid {
+  display: grid;
+  grid-gap: 1em;
+}
+.features-card {
+  //background: url('https://www.sipgate.de/wp-content/uploads/sim2_refresh.jpg');
+  //background-position: top center;
+  //margin: 0.6em 5%;
+  border-radius: 0.5em;
+  color: $color-white;
+  padding: 2em 1.5em;
+
+  &:hover {
+    transition: all 0.2s cubic-bezier(0.83, 0.16, 0.38, 0.9) 0s;
+    -webkit-transform: translate(0, -3.25px);
+    -ms-transform: translate(0, -3.25px);
+    transform: translate(0, -3.25px);
+    box-shadow: 0 6.5px 19.5px rgba(0, 0, 0, 0.2);
+  }
+
+  & .content {
+    display: flex;
+    flex-direction: column;
+    padding-top: 27rem;
+    //padding-bottom: 2em;
+    max-width: 450px;
+    margin: 0 auto;
+    align-items: center;
+  }
+}
+
+.btn-flex {
   display: flex;
   flex-direction: column;
-  height: 700px;
-  justify-content: flex-end;
-  margin: 0 1em;
-  border-radius: 10px;
-  color: $color-white;
+}
+
+@media (min-width: 476px) {
+  .features-container {
+    padding: 2em 2em;
+  }
+  .btn-flex {
+    display: flex;
+    flex-direction: row;
+    //justify-content: space-between;
+  }
+}
+
+@media (min-width: 1040px) {
+  .features-container {
+    padding: 2em 3em;
+  }
+  .features-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1em;
+  }
+  .features-card {
+    //margin-right: 0.6em 0.5em;
+  }
+  .btn-flex {
+    flex-direction: column;
+
+    & > * {
+      margin: 0.5em 0;
+    }
+  }
+}
+
+@media (min-width: 1170px) {
+  .features-container {
+    padding: 2em 5em;
+  }
+}
+
+@media (min-width: 1300px) {
+  .features-container {
+    padding: 2em 10em;
+  }
 }
