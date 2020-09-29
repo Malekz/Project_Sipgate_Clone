@@ -3,7 +3,7 @@
   justify-content: space-between;
   padding: 1em;
   height: 52px;
-  background: orange;
+  background: $color-dark;
   position: fixed;
   top: 0;
   right: 0;
@@ -20,6 +20,7 @@
 
 .header.active {
   //background: rgba(0, 0, 0, 9);
+  box-shadow: 0 2px 2px rgba(255, 255, 255, 0.1);
   z-index: 999;
 }
 
@@ -74,7 +75,7 @@
   transition: all 0.5s ease;
   height: 100vh;
   z-index: -10;
-  border-top: 1px solid $color-white;
+  //border-top: 1px solid $color-white;
 }
 
 .search-icon {
