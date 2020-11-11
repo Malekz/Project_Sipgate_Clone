@@ -7,7 +7,7 @@ const Header = () => {
     <div className="container hero">
       <video
         className="hero-video"
-        src="https://www.sipgate.de/wp-content/keyvisual_sipgate_1280x1280_black.mp4"
+        src={heroVideo}
         playsinline=""
         autoplay="autoplay"
         loop="loop"
