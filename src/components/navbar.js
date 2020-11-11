@@ -74,11 +74,7 @@ const Navbar = () => {
           {navbar.map((item, index) => {
             return (
               <li className="nav-item" key={index}>
-                <Link
-                  to={item.path}
-                  className="nav-links"
-                  onClick={closeMobileMenu}
-                >
+                <Link to="/" className="nav-links" onClick={closeMobileMenu}>
                   {item.title}
                 </Link>
               </li>
