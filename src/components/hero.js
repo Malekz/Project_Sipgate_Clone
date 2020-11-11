@@ -5,6 +5,14 @@ import heroVideo from '../assets/keyvisual_sipgate_1280x1280_black.mp4';
 const Header = () => {
   return (
     <div className="container hero">
+      <video
+        className="hero-video"
+        src="https://www.sipgate.de/wp-content/keyvisual_sipgate_1280x1280_black.mp4"
+        playsinline=""
+        autoplay="autoplay"
+        loop="loop"
+        muted=""
+      ></video>
       <div className="hero-content">
         <h1>Die eSIM von sipgate</h1>
         <p>Entdecken Sie die echten Vorteile der eSIM</p>

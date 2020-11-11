@@ -1,7 +1,7 @@
 .hero {
   color: $color-white;
   background-color: $color-dark;
-  padding: 18em 0 2em 0;
+  //padding: 18em 0 2em 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -17,6 +17,7 @@
     object-fit: contain;
     margin-top: -23em;
     overflow: hidden;
+    margin-top: 1rem;
     //z-index: -1;
   }
   &-content {
