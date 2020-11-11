@@ -90,6 +90,7 @@
 .nav-links {
   text-align: center;
   padding: 1rem;
+  margin: 0;
   width: 100%;
   display: table;
   color: $color-white;
@@ -107,21 +108,11 @@
   z-index: 999;
 }
 
-.login-btn {
-  color: $color-white;
-  background-color: transparent;
-  box-sizing: border-box;
-  border: 0.2em solid $color-white;
-  margin: 0.5em auto;
-  padding: 0.3em 1.3em;
-  border-radius: 2em;
-  display: table;
-}
-
 // Desktop
 @media screen and (min-width: 1170px) {
   .header {
     box-shadow: none;
+    height: 5rem;
   }
   .navbar-logo {
     cursor: pointer;
@@ -144,6 +135,7 @@
     justify-content: space-between;
     align-items: center;
     height: 80px;
+    margin: 0;
   }
 
   .nav-links {
@@ -152,26 +144,15 @@
     padding: 1.8rem 1rem;
     z-index: 10;
     display: block;
-  }
 
-  .nav-links:hover {
-    background-color: $color-dark-light;
-    transition: all 0.2s ease-out;
+    &:hover {
+      background-color: $color-dark-light;
+      transition: all 0.2s ease-out;
+    }
   }
 
   .menu-icon {
     display: none;
     z-index: 5;
-  }
-
-  .login-btn {
-    color: $color-white;
-    background-color: transparent;
-    box-sizing: border-box;
-    border: 0.2em solid $color-white;
-    margin: 0.5em auto;
-    padding: 0.3em 1.3em;
-    border-radius: 2em;
-    //width: 15%;
   }
 }

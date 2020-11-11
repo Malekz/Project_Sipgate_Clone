@@ -5,7 +5,7 @@
 
   h3 {
     font-size: 1.5em;
-    margin-bottom: 1em;
+    margin: 1em;
   }
 }
 
@@ -22,14 +22,6 @@
     overflow: hidden;
     border-radius: 0.5em;
     background: linear-gradient(-36deg, #000 0%, #202020 80%);
-    border: 1px $color-dark solid;
-
-    //transition: -webkit-transform 0.1s cubic-bezier(0.83, 0.16, 0.38, 0.9) 0s;
-    //transition: transform 0.1s cubic-bezier(0.83, 0.16, 0.38, 0.9) 0s;
-    //transition: transform 0.1s cubic-bezier(0.83, 0.16, 0.38, 0.9) 0s,
-    //  -webkit-transform 0.1s cubic-bezier(0.83, 0.16, 0.38, 0.9) 0s;
-    // -webkit-transform: translate3d(0, 0, 0, 0);
-    // transform: translate3d(0, 0, 0, 0);
 
     &:hover {
       transition: all 0.2s cubic-bezier(0.83, 0.16, 0.38, 0.9) 0s;
@@ -50,7 +42,7 @@
 
     &-link {
       width: 100%;
-      border: none;
+      border: 0;
       font-size: 0.8em;
       font-weight: bold;
       color: $color-dark;
@@ -86,12 +78,32 @@
   .products-containeer {
     padding: 2em 5em;
   }
+
   .card-container {
     grid-template-columns: repeat(6, 1fr);
   }
 }
 
 @media (min-width: 1300px) {
+  .card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 0.5em;
+    background: linear-gradient(-36deg, #000 0%, #202020 80%);
+
+    & h3 {
+      font-weight: 500;
+    }
+
+    &__image-holder {
+      width: 35%;
+      padding-top: 1rem;
+    }
+  }
+
   .products-containeer {
     padding: 2em 10em;
   }
