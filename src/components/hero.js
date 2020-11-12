@@ -8,11 +8,9 @@ const Header = () => {
       <video
         className="hero-video"
         src={heroVideo}
-        playsinline=""
         autoplay="autoplay"
         loop="true"
         muted
-        controls
       ></video>
       <div className="hero-content">
         <h1>Die eSIM von sipgate</h1>
