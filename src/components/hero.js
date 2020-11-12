@@ -10,8 +10,9 @@ const Header = () => {
         src={heroVideo}
         playsinline=""
         autoplay="autoplay"
-        loop="loop"
-        muted=""
+        loop="true"
+        muted
+        controls
       ></video>
       <div className="hero-content">
         <h1>Die eSIM von sipgate</h1>
