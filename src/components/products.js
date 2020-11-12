@@ -1,5 +1,6 @@
 import React from 'react';
 //import { AiOutlineArrowRight } from 'react-icons/ai';
+import { Link } from 'react-router-dom';
 
 import firstImage from '../assets/stage-product-icons-basic.svg';
 import secondImage from '../assets/stage-product-icons-simquadrat.svg';
@@ -24,9 +25,9 @@ const Products = () => {
               </h3>
             </div>
           </figcaption>
-          <a href="#" className="card-link">
+          <Link to="/" className="card-link">
             sipgate basic
-          </a>
+          </Link>
         </figure>
 
         <figure className="card">
@@ -40,9 +41,9 @@ const Products = () => {
               </h3>
             </div>
           </figcaption>
-          <a href="#" className="card-link">
+          <Link to="/" className="card-link">
             sipgate basic
-          </a>
+          </Link>
         </figure>
 
         <figure className="card">
@@ -56,9 +57,9 @@ const Products = () => {
               </h3>
             </div>
           </figcaption>
-          <a href="#" className="card-link">
+          <Link to="/" className="card-link">
             sipgate basic
-          </a>
+          </Link>
         </figure>
 
         <figure className="card">
@@ -72,9 +73,9 @@ const Products = () => {
               </h3>
             </div>
           </figcaption>
-          <a href="#" className="card-link">
+          <Link to="/" className="card-link">
             sipgate basic
-          </a>
+          </Link>
         </figure>
 
         <figure className="card">
@@ -88,9 +89,9 @@ const Products = () => {
               </h3>
             </div>
           </figcaption>
-          <a href="#" className="card-link">
+          <Link to="/" className="card-link">
             sipgate basic
-          </a>
+          </Link>
         </figure>
 
         <figure className="card">
@@ -104,9 +105,9 @@ const Products = () => {
               </h3>
             </div>
           </figcaption>
-          <a href="#" className="card-link">
+          <Link to="/" className="card-link">
             sipgate basic
-          </a>
+          </Link>
         </figure>
       </div>
     </section>

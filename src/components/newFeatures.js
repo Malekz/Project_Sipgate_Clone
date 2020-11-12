@@ -1,5 +1,5 @@
 import React from 'react';
-import { AiOutlineArrowRight } from 'react-icons/ai';
+import { Link } from 'react-router-dom';
 
 const NewFeatures = () => {
   return (
@@ -23,12 +23,12 @@ const NewFeatures = () => {
               Features
             </p>
             <div className="btn-flex">
-              <a className="btn btn-primary" href="#">
+              <Link to="/" className="btn btn-primary">
                 Mehr Erfahren
-              </a>
-              <a className="btn btn-secondary" href="#">
+              </Link>
+              <Link to="/" className="btn btn-secondary">
                 kostenlos testen
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -50,9 +50,9 @@ const NewFeatures = () => {
               auch an jedem Computer – mit dem sipgate Softphone
             </p>
           </div>
-          <a className="btn btn-black" href="#">
+          <Link to="/" className="btn btn-black">
             Mehr Erfahren
-          </a>
+          </Link>
         </div>
         <div
           className="features-card"
@@ -72,9 +72,9 @@ const NewFeatures = () => {
               Features
             </p>
           </div>
-          <a className="btn btn-black" href="#">
+          <Link to="/" className="btn btn-black">
             Mehr Erfahren
-          </a>
+          </Link>
         </div>
       </div>
     </section>

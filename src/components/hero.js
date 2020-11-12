@@ -1,6 +1,6 @@
 import React from 'react';
 import heroVideo from '../assets/keyvisual_sipgate_1280x1280_black.mp4';
-//import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   return (
@@ -16,9 +16,9 @@ const Header = () => {
       <div className="hero-content">
         <h1>Die eSIM von sipgate</h1>
         <p>Entdecken Sie die echten Vorteile der eSIM</p>
-        <a className="btn btn-primary" href="#">
+        <Link to="/" className="btn btn-primary">
           Mehr erfahren
-        </a>
+        </Link>
       </div>
     </div>
   );
